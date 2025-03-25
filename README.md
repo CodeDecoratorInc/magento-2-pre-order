@@ -1,58 +1,65 @@
-# Magento 2 Disable Compare Extension
+# Magento 2 Pre-Order Extension
 
 ## Introduction
-The **Magento 2 Disable Compare Extension** by CodeDecorator helps store owners remove the **Add to Compare** feature from their Magento store. This extension enhances user experience by eliminating unnecessary options, streamlining the shopping process, and improving store navigation. It is lightweight, easy to install, and works seamlessly with Magento 2 themes.
+Magento 2 Pre-Order Extension allows store owners to sell upcoming or out-of-stock products as pre-orders. This feature enhances customer experience by enabling them to reserve products in advance, ensuring they don't miss out once items are available. With flexible settings, automated notifications, and a seamless checkout process, this extension optimizes inventory management and boosts sales.
 
 ## How It Works
-The **Magento 2 Disable Compare Extension** disables the **Add to Compare** button across the store, including product pages, category pages, and search results. With a simple backend configuration, admins can enable or disable this feature as per their store requirements. The extension ensures that the compare functionality does not interfere with other Magento features.
+Magento 2 Pre-Order Extension replaces the default "Add to Cart" button with a "Pre-Order" option for selected products. Customers can place orders for items that are out of stock or yet to be released. Store admins can configure pre-order messaging, set availability dates, and notify customers upon product release. This extension is compatible with simple, configurable, and grouped products, ensuring a smooth purchasing experience.
 
 ## Key Features
-- **Remove Compare Feature** – Eliminates the **Add to Compare** button from product and category pages.
-- **Easy Backend Configuration** – Admins can enable or disable the compare feature with a single setting.
-- **Seamless Integration** – Works with all Magento 2 themes without conflicts.
-- **Performance Optimized** – The extension is lightweight and does not affect store speed.
+- Enable pre-order for out-of-stock or upcoming products
+- Customizable pre-order messages on product pages
+- Automated email notifications for product availability
+- Supports simple, configurable, and grouped products
 
-## Key Feature 1: Remove Compare Button
-The extension completely removes the **Add to Compare** button from all store pages, including product listings and detailed pages.
+## Pre-Order Button Customization
+Store admins can personalize the pre-order button text to match their branding. This ensures a seamless shopping experience and better engagement with customers.
 
-## Key Feature 2: Backend Toggle Option
-Admins can easily enable or disable the **Compare Products** feature from the Magento 2 backend, providing flexibility in store management.
+## Automated Email Notifications
+Once a pre-ordered item is back in stock, customers automatically receive an email notification. This feature helps boost conversions by reminding users about their reserved products.
 
-## Key Feature 3: Theme Compatibility
-The extension works smoothly with all Magento 2 themes, ensuring no UI or functionality conflicts.
+## Flexible Payment Options
+Customers can choose to pay in full or leave a deposit at checkout. This flexibility enhances user experience and increases pre-order sales.
 
-## Key Feature 4: No Performance Impact
-Designed to be lightweight, the extension does not affect store speed or functionality, keeping performance optimal.
+## Analytics & Reporting
+Store owners can track pre-orders, analyze customer behavior, and optimize their marketing strategies accordingly.
 
 ## Extension Installation
 
-### Step 1: Install the Extension Using Composer
-```sh
-composer require codedecorator/magento2-disable-compare
+### Step 1: Install the extension using Composer:
+```bash
+composer require vendor/magento2-preorder
 ```
 For a specific version:
-```sh
-composer require codedecorator/magento2-disable-compare:<version>
+```bash
+composer require vendor/magento2-preorder:version
 ```
-*Note: You may need authentication keys from Magento Marketplace or the vendor.*
+*Note: You may need authentication keys from the vendor or Magento Marketplace.*
 
-### Step 2: Run Setup Commands
-```sh
+### Step 2: Run the following commands
+```bash
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy
 php bin/magento setup:static-content:deploy -f
 php bin/magento cache:flush
 ```
 
-## How To Configure Magento 2 Disable Compare Extension
+## How to Configure Magento 2 Pre-Order Extension
 
-### Step 1: Navigate to Admin Panel
-Go to **Stores > Configuration > CodeDecorator > Disable Compare**.
+### Step 1: Navigate to the Admin Panel
+Go to **Stores > Configuration > Pre-Order Settings**.
 
-### Step 2: Enable/Disable Extension
-Set **Enable Compare Feature** to **Yes** or **No** based on your preference.
+### Step 2: Enable the Extension
+Toggle the option to **Enable Pre-Order** and configure the settings as required.
 
-### Step 3: Save Configuration
-Click **Save Config** and refresh the cache for changes to take effect.
+### Step 3: Customize Pre-Order Messages
+Modify the pre-order text displayed on product pages and checkout.
 
-## Download Our [Magento 2 Disable Compare](https://codedecorator.com/magento-2-disable-compare.html) Extension
+### Step 4: Set Product-Specific Pre-Orders
+Navigate to **Catalog > Products**, select a product, and enable the **Pre-Order** option.
+
+### Step 5: Save and Apply Settings
+Click **Save Config** and refresh the cache.
+
+## Download Our [Magento 2 Pre-Order](https://codedecorator.com/magento-2-preorder.html) Extension
